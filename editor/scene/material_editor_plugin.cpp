@@ -51,6 +51,7 @@
 #include "servers/rendering/rendering_server.h"
 
 // 3D.
+#include "core/io/resource_loader.h"
 #include "scene/3d/camera_3d.h"
 #include "scene/3d/light_3d.h"
 #include "scene/3d/mesh_instance_3d.h"

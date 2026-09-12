@@ -79,9 +79,6 @@ class MaterialEditor : public Control {
 	ColorRect *rect_instance = nullptr;
 
 	// Both 2D and 3D materials.
-	Ref<Material> material;
-	SubViewportContainer *vc = nullptr;
-	SubViewport *viewport = nullptr;
 	Node3D *rotation = nullptr;
 	MeshInstance3D *sphere_instance = nullptr;
 	MeshInstance3D *box_instance = nullptr;
@@ -97,10 +94,6 @@ class MaterialEditor : public Control {
 	Ref<BoxMesh> box_mesh;
 	Ref<QuadMesh> quad_mesh;
 	Ref<PlaneMesh> floor_mesh;
-
-	VBoxContainer *layout_error = nullptr;
-	Label *error_label = nullptr;
-	bool is_unsupported_shader_mode = false;
 
 	HBoxContainer *layout_3d = nullptr;
 
